@@ -1,0 +1,63 @@
+---
+const { titulo, subtitulo, ctaTexto } = Astro.props;
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>{titulo}</h1>
+    <p>{subtitulo}</p>
+    <button>{ctaTexto}</button>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+
+  button {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+</style>

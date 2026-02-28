@@ -1,0 +1,59 @@
+---
+import LandingLayout from "../layouts/LandingLayout.astro";
+import Hero from "../components/Hero.astro";
+import LeadForm from "../components/LeadForm.astro";
+---
+
+<LandingLayout>
+
+  <!-- HERO -->
+  <Hero 
+    titulo="Abogado Penal en Bogotá – Defensa inmediata y especializada"
+    subtitulo="Si tienes una denuncia, citación o investigación en tu contra, te conectamos con firmas con experiencia en derecho penal en Bogotá."
+    ctaTexto="Necesito defensa ahora"
+  />
+
+  <!-- INTRO -->
+  <section>
+    <div class="container">
+      <h2>Actúa rápido. La defensa empieza desde el primer momento.</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 30px;">
+        En procesos penales, cada decisión puede afectar el resultado del caso.
+        Te ayudamos a contactar abogados con experiencia en:
+      </p>
+
+      <ul>
+        <li>Investigaciones en Fiscalía</li>
+        <li>Audiencias preliminares</li>
+        <li>Medidas de aseguramiento</li>
+        <li>Defensa en juicio</li>
+        <li>Asesoría preventiva</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container">
+      <h2>¿Cómo funciona RutaLegal?</h2>
+      <ol style="max-width:600px; margin:0 auto;">
+        <li>Describe tu caso en menos de 2 minutos.</li>
+        <li>Clasificamos tu situación jurídica.</li>
+        <li>Te conectamos con una firma penal adecuada en Bogotá.</li>
+      </ol>
+
+      <p style="text-align:center; font-weight:600; margin-top:20px;">
+        La evaluación inicial no tiene costo. Tú decides si avanzar.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section>
+    <div class="container">
+      <h2 style="margin-bottom:20px;">Solicita orientación legal ahora</h2>
+      <LeadForm nicho="penal" ciudad="bogota" />
+    </div>
+  </section>
+
+</LandingLayout>
